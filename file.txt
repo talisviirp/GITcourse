@@ -1,3 +1,2 @@
 Tere tulemast sellesse imelikku konsooli maailma!
-Lisatud uued kommentaarid, mida kustutada hiljem
-Adding new, experimental functionality.
+Lisatud uued kommentaarid, mida kustutada hiljem.
