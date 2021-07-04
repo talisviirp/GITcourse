@@ -4,255 +4,346 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- CSS only -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
-    <title>Learn Bootstrap</title>
+    <title>Document</title>
   </head>
   <body>
-    <h1>Hello World</h1>
-    <!-- Grid System -->
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-2 col-md-3 col-lg-3 col-xl-2">
-          <img src="assets/codegif-2.jpg" width="100%" alt="" />
-        </div>
-
-        <div class="col-sm-4 col-md-3 col-lg-3 col-xl-4">
-          <img src="assets/codegif-2.jpg" width="100%" alt="" />
-        </div>
-
-        <div class="col-sm-2 col-md-5 col-lg-3 col-xl-5">
-          <img src="assets/codegif-2.jpg" width="100%" alt="" />
-        </div>
-
-        <div class="col-sm-4 col-md-1 col-lg-3 col-xl-1">
-          <img src="assets/codegif-2.jpg" width="100%" alt="" />
+    <!-- This is the NavBar Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-info">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Talis</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-dark" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#" tabindex="-1">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
         </div>
       </div>
-    </div>
-    <!-- Typography -->
-    <div class="container mt-5">
-      <h1 class="display-1">h1 Heading</h1>
-      <h2 class="display-2">h2 Heading</h2>
-      <h3>h3 Heading</h3>
-      <h4>h4 Heading</h4>
-      <h5>h5 Heading</h5>
-      <h6>h6 Heading</h6>
+    </nav>
 
-      <p class="h1">This is an header paragraph</p>
-      <p class="h2">This is an header paragraph</p>
-      <p class="h3">This is an header paragraph</p>
-      <p class="h4">This is an header paragraph</p>
-      <p class="h5">This is an header paragraph</p>
-      <p class="h6">This is an header paragraph</p>
-
-      <p>I am a <mark>boy</mark></p>
-      <p><del>I want to show deletion</del></p>
-
-      <p class="mark">boy</p>
-      <p class="">Deletion</p>
-
-      <!-- adds some sauce to the paragraph -->
-      <p class="lead">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid sunt
-        voluptatibus magnam officiis eveniet iusto.
-      </p>
-
-      <blockquote class="blockquote">This is a quote by me</blockquote>
-
-      <!-- Helps center text (Alignment)-->
-      <p class="text-center lead">This is a centered text</p>
-      <p class="text-end lead">This is aligned to the end</p>
-      <p class="text-start lead">This is aligned to the Start</p>
-
-      <ul class="list-unstyled">
-        <li>This is a list item</li>
-        <li>This is a list item</li>
-        <li>This is a list item</li>
-        <li>This is a list item</li>
-        <li>This is a list item</li>
-      </ul>
-    </div>
-    <!-- Table -->
-    <div class="container mt-5">
-      <div class="table-responsive">
-        <table class="table table-warning table-hover table-borderless">
-          <thead>
-            <tr>
-              <th scope="col">Name</th>
-              <th scope="col">Age</th>
-              <th scope="col">City</th>
-            </tr>
-          </thead>
-          <tr class="table-primary align-bottom">
-            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
-            <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</td>
-            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
-          </tr>
-          <tr class="table-dark">
-            <td>Olayinka</td>
-            <td>15</td>
-            <td>Lagos</td>
-          </tr>
-          <tr>
-            <td>Vita</td>
-            <td>16</td>
-            <td>Brighton</td>
-          </tr>
-        </table>
+    <!-- This is the content container  -->
+    <div class="container pt-5">
+      <!-- I'll have a carousel -->
+      <p class="lead text-center">Welcome to my page</p>
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide w-75 mx-auto"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="assets/butterfly.jpg"
+              class="img-fluid d-block w-100"
+              style="height: 300px"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Beautiful Butterfly</h5>
+              <p>They are Beautiful, sadly i don't get to see you everyday</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/cat.jpg"
+              class="d-block w-100"
+              style="height: 300px"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Stubborn Cat</h5>
+              <p>I just love seeing you everyday</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/horse.jpg"
+              class="d-block w-100"
+              style="height: 300px"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>SpeedStar</h5>
+              <p>Some strong beast here</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-    </div>
-    <!-- Forms -->
-    <div class="container mt-5">
-      <form>
-        <label class="form-label" for="firstName">First name:</label>
-        <input class="form-control" type="text" id="firstName" />
-        <label class="form-label" for="lastName">Last name:</label>
-        <input class="form-control" type="text" id="lastName" />
-        <button class="btn btn-primary">Submit</button>
-      </form>
 
-      <form class="row">
-        <div class="col-md-6">
-          <label class="form-label" for="">Email</label>
-          <input class="form-control" type="email" name="" id="" />
-        </div>
-        <div class="col-md-6">
-          <label class="form-label" for="">Password</label>
-          <input class="form-control" type="password" />
-        </div>
-
-        <div class="col-md-5">
-          <label class="form-label" for="">Address</label>
-          <input class="form-control" type="text" />
-        </div>
-
+      <!-- The alert goes in here -->
+      <div class="alert alert-warning w-75 mx-auto mt-5" role="alert">
+        I guess you must have enjoyed my carousel :)
+      </div>
+      <!-- Cards and Grid system  -->
+      <div class="row mt-5">
         <div class="col-md-4">
-          <label class="form-label" for="">City</label>
-          <input class="form-control" type="text" />
+          <div class="card" style="width: 18rem">
+            <img src="assets/4136918-2.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">I like to code</h5>
+              <p class="card-text">This is what i enjoy doing</p>
+              <a href="#" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#exampleModal">Go somewhere</a>
+              <!-- Modal Content -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        I like to code
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                        Coding has always been part of me, I enjoy doing this everyday of my life.
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Save changes
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div class="col-md-3">
-          <label class="form-label" for="">State</label>
-          <select class="form-select" name="" id="">
-            <option selected disabled value="">Select state</option>
-            <option value="">Lagos</option>
-            <option value="">Chicago</option>
-          </select>
-        </div>
-      </form>
-    </div>
-
-    <!-- Buttons -->
-    <div class="container mt-5">
-      <button class="btn btn-primary">Click me</button>
-      <button class="btn btn-outline-secondary btn-sm">Click me</button>
-      <button class="btn btn-success">Click me</button>
-      <button class="btn btn-danger">Click me</button>
-      <button class="btn btn-outline-warning btn-lg">Click me</button>
-      <button class="btn btn-light">Click me</button>
-      <button class="btn btn-dark">Click me</button>
-      <button class="btn btn-link">Click me</button>
-    </div>
-
-    <!-- Images other effects (Background-colour, Text-colours) -->
-    <div class="container mt-5">
-      <div class="row bg-warning">
         <div class="col-md-4">
-          <img src="assets/4136918-2.jpg" class="img-fluid" alt="">
-        </div>
-        <div class="col-md-6">
-          <p class="text-primary">Lorem ipsum dolor sit amet.</p>
-          <p class="text-secondary">Lorem ipsum dolor sit amet.</p>
-          <p class="text-info">Lorem ipsum dolor sit amet.</p>
-          <p class="text-danger">Lorem ipsum dolor sit amet.</p>
-          <p class="text-success">Lorem ipsum dolor sit amet.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Bootstrap Helpers & Utilities (Flex, alignment, spacing, sizing) -->
-    <div class="container mt-5">
-      <div class="d-flex justify-content-between">
-        <p>First paragraph</p>
-        <p>Second paragraph</p>
-      </div>
-      <!-- m stands margin, p stands padding, t stands top  b stands for bottom s stands for left or start e stands for end or right-->
-      <!-- mt stands for margin-top, pt stands padding-top -->
-      <!-- starts from 0 - 5 and we can also use auto -->
-      <div class="d-flex justify-content-around">
-        <p class="mt-4">Some paragraph</p>
-        <p class="mb-4">Some paragraph</p>
-        <p class="mt-2">Some paragr aph</p>
-        <p class="pt-5">Some paragraph</p>
-      </div>
-      <!-- w stands for width, h stands for height -->
-      <div >
-        <div class="bg-primary w-25 h-25">Some primary div</div>
-        <div class="bg-secondary w-50 h-50">Some secondary div</div>
-        <div class="bg-info w-75 h-75">Some info div</div>
-        <div class="bg-warning w-100 h-100">Some warning div</div>
-      </div>
-    </div>
-
-    <!-- Components (Accordion) -->
-    <div class="container mt-5">
-
-      <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              Olayinka
-            </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>This is the most powerful villian on earth</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          <div class="card" style="width: 18rem">
+            <img src="assets/codegif-2.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Javascript is cool</h5>
+              <p class="card-text">I've built so much software with that</p>
+              <a href="#" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#exampleModal2">Go somewhere</a>
+              <!-- Modal Content -->
+              <div
+                class="modal fade"
+                id="exampleModal2"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Javascript is cool
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                        I have built some cool frameworks and libraries that has helped solved some problems
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Save changes
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Karl
-            </button>
-          </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Martti
-            </button>
-          </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="assets/Talis.jpg"
+              class="card-img-top"
+              style="height: 300px"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Hello World</h5>
+              <p class="card-text">This is what i enjoy doing</p>
+              <a href="#" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#exampleModal3" >Go somewhere</a>
+              <!-- Modal Content -->
+              <div
+                class="modal fade"
+                id="exampleModal3"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Hello World
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                        I also have other passions.. 
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Save changes
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
-
-      <div class="card" style="width: 18rem;">
-        <img src="assets/codegif-2.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Code is massive</h5>
-          <p class="card-text">Let's build some cool stuffs together</p>
-          <a href="#" class="btn btn-primary">Contact me</a>
-        </div>
+      <!-- List-group -->
+      <div class="list-group mt-5">
+        <a
+          href="#"
+          class="list-group-item list-group-item-action active"
+          aria-current="true"
+        >
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">England were so good yesterday</h5>
+            <small>1 day ago</small>
+          </div>
+          <p class="mb-1">They balled those guys..</p>
+          <small>No hope for the opponent's player</small>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">World Fashion show</h5>
+            <small class="text-muted">2 days ago</small>
+          </div>
+          <p class="mb-1">This is happening in Paris</p>
+          <small class="text-muted">We want you there.</small>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Summer Tech Summit</h5>
+            <small class="text-muted">3 days ago</small>
+          </div>
+          <p class="mb-1">Come prepared for the best Hackaton ever</p>
+          <small class="text-muted"
+            >A trial will open opportunities for you</small
+          >
+        </a>
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
